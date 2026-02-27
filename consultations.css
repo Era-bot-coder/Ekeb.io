@@ -1,0 +1,29 @@
+/* consultations.css */
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* чтобы картинки не прилипали к хедеру/футеру */
+  padding-block: clamp(16px, 3vw, 40px);
+  gap: clamp(16px, 4vw, 56px); /* вместо margin-block у img можно через gap */
+}
+
+/* ограничиваем влияние на другие картинки сайта */
+main > img{
+  display: block;
+  width: min(92vw, 900px);   /* мобилка: ~92% экрана, ПК: максимум 900px */
+  height: auto;
+  object-fit: contain;
+
+  /* “margin-block” оставляем, но делаем адаптивным */
+  margin-block: clamp(12px, 3vw, 28px);
+}
+
+/* большие экраны — можно сделать чуть шире */
+@media (min-width: 1024px){
+  main > img{
+    width: min(70vw, 1000px);
+  }
+}

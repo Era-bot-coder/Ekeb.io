@@ -1,0 +1,273 @@
+<!-- study.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обучение</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="study.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="navbar__brand">
+        <img src="./img/Ellipse_4.png" alt="Логотип" class="navbar__logo" />
+      </a>
+
+      <div class="navbar__right">
+        <div class="navbar__meta">
+          <a href="index.html" class="navbar__lang">KAZ</a>
+          <a href="indexen.html" class="navbar__lang">ENG</a>
+          <a href="tel:+77003543772" class="navbar__phone">+7 (700) 354-37-72</a>
+        </div>
+
+        <button class="navbar__burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <aside class="drawer" id="drawer" aria-hidden="true">
+        <button class="drawer__close" id="drawerClose" aria-label="Закрыть меню">×</button>
+
+        <ul class="drawer__links">
+          <li><a href="index.html" class="drawer__link">Главная</a></li>
+          <li><a href="about.html" class="drawer__link">О нас</a></li>
+          <li><a href="abiturent.html" class="drawer__link">Абитуриенту</a></li>
+
+          <li class="drawer__item drawer__item--has-sub">
+            <button class="drawer__link drawer__toggle" type="button" aria-expanded="false">
+              <span>Студенту</span>
+              <span class="drawer__chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="drawer__sub" aria-hidden="true">
+              <div class="drawer__sub-inner">
+                <a href="rules.html" class="drawer__sublink">Правила внутреннего распорядка</a>
+                <a href="schedule.html" class="drawer__sublink">Расписание занятий и звонков</a>
+                <a href="consultations.html" class="drawer__sublink">Расписание консультации и экзаменов</a>
+                <a href="study-process.html" class="drawer__sublink">График учебного процесса</a>
+                <a href="library.html" class="drawer__sublink">Библиотека</a>
+                <a href="useful-links.html" class="drawer__sublink">Полезные ссылки</a>
+                <a href="trust-mail.html" class="drawer__sublink">Электронный ящик доверия</a>
+                <a href="student-center.html" class="drawer__sublink">Центр обслуживания студентов</a>
+                <a href="payment.html" class="drawer__sublink">Оплата за обучение</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="study.html" class="drawer__link">Обучение</a></li>
+        </ul>
+
+        <div class="drawer__socials">
+          <a href="#" class="drawer__social" aria-label="Instagram"><img src="./img/social.png" alt="Instagram" /></a>
+          <a href="#" class="drawer__social" aria-label="WhatsApp"><img src="./img/whatsapp.png" alt="WhatsApp" /></a>
+          <a href="#" class="drawer__social" aria-label="TikTok"><img src="./img/social-media.png" alt="TikTok" /></a>
+          <a href="#" class="drawer__social" aria-label="Telegram"><img src="./img/communication.png" alt="Telegram" /></a>
+        </div>
+      </aside>
+
+      <div class="backdrop" id="backdrop"></div>
+    </nav>
+  </header>
+
+  <main class="study">
+    <div class="study__container">
+
+      <!-- HERO (исправил: теперь есть .hero) -->
+      <section class="hero">
+        <div class="hero__badge">Обучение ✨</div>
+        <h1 class="hero__title">Дуальное обучение ~ня~</h1>
+        <p class="hero__text">
+          Дуальное обучение сочетает теоретические занятия в колледже с практической работой на предприятиях.
+          Это помогает получить необходимые знания и навыки для успешной карьеры, чан~
+        </p>
+
+        <div class="hero__chips" aria-label="Коротко о формате">
+          <span class="chip">🎓 теория</span>
+          <span class="chip">🏢 практика</span>
+          <span class="chip">⭐ опыт</span>
+          <span class="chip">✅ шанс трудоустройства</span>
+        </div>
+      </section>
+
+      <!-- BLOCKS -->
+      <section class="grid">
+
+        <article class="card">
+          <div class="card__head">
+            <h2 class="card__title">Суть дуального обучения</h2>
+            <div class="card__icon" aria-hidden="true">🎓</div>
+          </div>
+          <p class="card__text">
+            Это формат, где часть времени ты учишь теорию в колледже, а часть — проходишь практику на предприятии.
+            В итоге навыки появляются быстрее, ня~
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <h2 class="card__title">Преимущества для абитуриентов ~чан~</h2>
+            <div class="card__icon" aria-hidden="true">⭐</div>
+          </div>
+          <ul class="list">
+            <li>Практическая подготовка</li>
+            <li>Адаптация к реальным условиям работы</li>
+            <li>Возможность трудоустройства</li>
+          </ul>
+        </article>
+
+        <article class="card card--wide">
+          <div class="card__head">
+            <h2 class="card__title">Преимущества обучения</h2>
+            <div class="card__icon" aria-hidden="true">✅</div>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <h3 class="feature__title">Дуальная система обучения ~ня~</h3>
+              <p class="feature__text">Сочетание теории и практики — учишься и сразу применяешь.</p>
+            </div>
+
+            <div class="feature">
+              <h3 class="feature__title">Практическая подготовка</h3>
+              <p class="feature__text">Реальные задачи и опыт в профессиональной среде.</p>
+            </div>
+
+            <div class="feature">
+              <h3 class="feature__title">Сотрудничество с работодателями</h3>
+              <p class="feature__text">Актуальные навыки и востребованность выпускников.</p>
+            </div>
+
+            <div class="feature">
+              <h3 class="feature__title">Индивидуальный подход ~чан~</h3>
+              <p class="feature__text">Гибкие программы с учетом целей и интересов студента.</p>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- PRACTICE DOCUMENTS -->
+      <section class="docs">
+        <div class="docs__head">
+          <h2 class="docs__title">Шаблон документов на практику ~ня~</h2>
+          <p class="docs__subtitle">Тәжірибеге арналған құжаттар / Документы для практики</p>
+        </div>
+
+        <div class="docs__grid">
+          <article class="doc">
+            <div class="doc__top">
+              <div class="doc__icon" aria-hidden="true">📄</div>
+              <div class="doc__meta">
+                <div class="doc__name">Тәжірибеге арналған құжаттар</div>
+                <div class="doc__desc">Жүктеу (скачать)</div>
+              </div>
+            </div>
+            <a class="btn" href="#" download>Скачать →</a>
+          </article>
+
+          <article class="doc">
+            <div class="doc__top">
+              <div class="doc__icon" aria-hidden="true">📁</div>
+              <div class="doc__meta">
+                <div class="doc__name">Документы для практики ~чан~</div>
+                <div class="doc__desc">Перейти к папке/странице</div>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">Перейти →</a>
+          </article>
+
+          <article class="doc">
+            <div class="doc__top">
+              <div class="doc__icon" aria-hidden="true">🗓</div>
+              <div class="doc__meta">
+                <div class="doc__name">Дневник практики</div>
+                <div class="doc__desc">С 2025–2026 учебного года дневник ведётся в SmartNation</div>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="https://college.snation.kz/ru/akt" target="_blank" rel="noopener noreferrer">
+              Открыть SmartNation →
+            </a>
+          </article>
+
+          <article class="doc">
+            <div class="doc__top">
+              <div class="doc__icon" aria-hidden="true">📝</div>
+              <div class="doc__meta">
+                <div class="doc__name">Рекомендации по отчету ~ня~</div>
+                <div class="doc__desc">Правила и структура</div>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">Перейти →</a>
+          </article>
+        </div>
+
+        <article class="notice">
+          <h3 class="notice__title">Важно ✨</h3>
+          <ul class="notice__list">
+            <li><b>Заполнение документов:</b> дневник практики и отчёт необходимо заполнять в SmartNation.</li>
+            <li><b>Важно:</b> дневник нельзя заполнить задним числом — данные вносятся ежедневно.</li>
+            <li><b>Направление:</b> формируется в SmartNation при условии, что данные предприятия будут переданы ответственному.</li>
+            <li><b>Юр. сила:</b> электронные документы имеют юридическую силу — следите за сроками и корректностью данных.</li>
+            <li>Если есть вопросы — обращайтесь к руководителю практики, чан~</li>
+          </ul>
+
+          <p class="notice__bottom">
+            <b>Уважаемые студенты!</b><br>
+            С 2025–2026 учебного года дневник практики, отчёт и направление оформляются через единую платформу College SmartNation, ня~
+          </p>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__col">
+        <h3 class="footer__title">Адрес</h3>
+        <p class="footer__text">
+          Республика Казахстан, г. Актобе,<br>
+          район Астана, ул. Маресьева 105
+        </p>
+
+        <h3 class="footer__title">График</h3>
+        <p class="footer__text">ПН-ПТ с 9:00 до 18:00</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <a href="tel:+77003543772" class="footer__link">+7 (700) 354-37-72</a>
+        <a href="mailto:info@ekeb.edu.kz" class="footer__link">info@ekeb.edu.kz</a>
+        <a href="mailto:ekeb@edu.kz" class="footer__link">ekeb@edu.kz</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Полезные ссылки</h3>
+        <a href="#" class="footer__link">Электронное правительство Республики Казахстан</a>
+        <a href="#" class="footer__link">Юридические услуги "Әділет"</a>
+        <a href="#" class="footer__link">НАО "Talap"</a>
+        <a href="#" class="footer__link">НОБД</a>
+        <a href="#" class="footer__link">АИС "Автоматизация государственных услуг"</a>
+        <a href="#" class="footer__link">Реестр образовательных программ</a>
+        <a href="#" class="footer__link">Национальная служба реагирования на компьютерные инциденты</a>
+        <a href="#" class="footer__link">Министерство просвещения Республики Казахстан</a>
+        <a href="#" class="footer__link">Департамент по обеспечению качества в сфере образования Актюбинской области</a>
+        <a href="#" class="footer__link">Национальная платформа непрерывного профессионального развития педагога</a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">© Все права защищены</div>
+  </footer>
+
+  <script src="./burger.js"></script>
+</body>
+</html>

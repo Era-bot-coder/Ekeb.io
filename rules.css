@@ -1,0 +1,78 @@
+/* ===== Rules page only ===== */
+
+.rules{
+  padding:110px 0 70px; /* место под fixed header */
+  background:#ffffff;
+}
+
+.rules__container{
+  width:min(980px, 92%);
+  margin:0 auto;
+}
+
+.rules__title{
+  text-align:center;
+  font-size:clamp(22px, 3.6vw, 40px);
+  font-weight:900;
+  letter-spacing:-.6px;
+  color:#111;
+  margin-bottom:26px;
+}
+
+.rules__paper{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:18px;
+  box-shadow:0 14px 40px rgba(0,0,0,.06);
+
+  padding:26px 24px;
+}
+
+/* читаемый текст */
+.rules__paper p{
+  font-size:15.5px;
+  line-height:1.85;
+  color:rgba(0,0,0,.78);
+  margin:12px 0;
+}
+
+.rules__paper h2{
+  margin-top:22px;
+  margin-bottom:10px;
+  font-size:18px;
+  font-weight:900;
+  color:#111;
+}
+
+.rules__paper ol{
+  margin:10px 0 16px;
+  padding-left:20px;
+}
+
+.rules__paper li{
+  margin:10px 0;
+  line-height:1.8;
+  color:rgba(0,0,0,.78);
+  font-size:15px;
+}
+
+.rules__note{
+  margin-top:18px;
+  font-size:13.5px !important;
+  color:rgba(0,0,0,.55) !important;
+}
+
+.rules__paper code{
+  background:#f7f7f8;
+  border:1px solid rgba(0,0,0,.06);
+  padding:2px 6px;
+  border-radius:8px;
+}
+
+/* mobile */
+@media (max-width:520px){
+  .rules{ padding:95px 0 60px; }
+  .rules__paper{ padding:18px 16px; border-radius:16px; }
+  .rules__paper p{ font-size:15px; }
+  .rules__paper li{ font-size:14.5px; }
+}

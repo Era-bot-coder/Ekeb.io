@@ -1,0 +1,619 @@
+/* abiturient.css */
+
+/* =========================
+   Милые цвета под #FFB6C9
+========================= */
+:root{
+  --pink:#FFB6C9;
+  --pink2:#ff8fb0;
+  --bg:#fff6fa;
+  --card:rgba(255,255,255,.82);
+  --stroke:rgba(255,182,201,.35);
+  --ink:#171717;
+  --muted:rgba(0,0,0,.62);
+}
+
+.abit{
+  margin-top:72px; /* фикс-хедер */
+  background: linear-gradient(180deg, var(--bg) 0%, #fff 55%, var(--bg) 100%);
+}
+
+/* общий контейнер уже есть в style.css, но если нет — не сломает */
+.container{ width:min(1120px,92%); margin:0 auto; }
+
+/* маленькая подстрока под заголовками */
+.section-sub{
+  margin-top:10px;
+  color: var(--muted);
+  font-weight:800;
+  line-height:1.65;
+  font-size:15px;
+
+  background: rgba(255,255,255,.65);
+  border:1px solid var(--stroke);
+  border-radius:18px;
+  padding:12px 14px;
+  box-shadow:0 16px 40px rgba(0,0,0,.06);
+}
+
+/* =========================
+   АНИМЕ ИЗОБРАЖЕНИЯ
+========================= */
+.abit-anime{
+  user-select:none;
+  pointer-events:none;
+  filter: drop-shadow(0 18px 28px rgba(0,0,0,.14));
+}
+
+/* возле таблицы слева */
+.abit-anime--left{
+  width: clamp(170px, 20vw, 320px);
+  align-self: end;
+  transform: translateY(6px);
+}
+
+/* у заголовка слева */
+.abit-anime--head-left{
+  width: clamp(170px, 20vw, 290px);
+  transform: rotate(-2deg);
+}
+
+/* у заголовка справа */
+.abit-anime--head-right{
+  width: clamp(170px, 20vw, 290px);
+  transform: rotate(2deg);
+}
+
+/* =========================
+   SECTION HEAD (заголовок + аниме)
+========================= */
+.section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+  margin-bottom:22px;
+}
+
+.section-head--left{ flex-direction: row; }
+.section-head--right{ flex-direction: row; }
+
+/* =========================
+   PROGRAMS (table)
+========================= */
+.programs-section{
+  padding: 78px 0 72px;
+}
+
+.programs-title{
+  text-align:center;
+  font-size:clamp(22px,3.2vw,34px);
+  font-weight:900;
+  color: var(--ink);
+  letter-spacing:-.6px;
+  margin-bottom:20px;
+}
+
+/* table + anime */
+.programs-layout{
+  display:grid;
+  grid-template-columns: minmax(160px, 320px) 1fr;
+  gap: 22px;
+  align-items: end;
+}
+
+.table-wrapper{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:18px;
+  box-shadow:0 14px 40px rgba(0,0,0,.06);
+  overflow:hidden;
+}
+
+/* твои таблицы */
+.programs-table{ width:100%; border-collapse:separate; border-spacing:0; }
+
+.programs-table thead th{
+  background:#fff0f6;
+  color:#222;
+  font-size:12px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.6px;
+  padding:14px 16px;
+  border-bottom:1px solid rgba(255,182,201,.35);
+}
+
+.programs-table td{
+  padding:16px;
+  font-size:14.5px;
+  color:#333;
+  vertical-align:top;
+  border-bottom:1px solid rgba(0,0,0,.06);
+  line-height:1.6;
+}
+
+.programs-table tbody tr:hover{ background:#fff7fb; }
+
+/* ================= SPEC FAQ ================= */
+.specfaq{
+  background:#ffffff;
+  padding:72px 0;
+}
+
+.specfaq__title{
+  font-size:clamp(22px, 3.2vw, 34px);
+  font-weight:900;
+  color: var(--ink);
+  letter-spacing:-.6px;
+  margin:0;
+}
+
+.specfaq__list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  width:min(920px, 100%);
+  margin:0 auto;
+}
+
+.specfaq__item{
+  border:1px solid rgba(255,182,201,.28);
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.specfaq__question{
+  width:100%;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+
+  padding:18px 18px;
+  text-align:left;
+}
+
+.specfaq__qtext{
+  font-size:16px;
+  font-weight:900;
+  color:#111;
+  line-height:1.4;
+}
+
+.specfaq__icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  border:1px solid rgba(255,182,201,.55);
+  background:#fff;
+  position:relative;
+  flex:0 0 auto;
+}
+
+.specfaq__icon::before,
+.specfaq__icon::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:16px;
+  height:2px;
+  background:#111;
+  transform:translate(-50%, -50%);
+  transition:opacity .2s ease;
+}
+.specfaq__icon::after{
+  transform:translate(-50%, -50%) rotate(90deg);
+}
+
+.specfaq__answer{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:max-height .35s ease, opacity .25s ease;
+}
+.specfaq__item.open .specfaq__answer{
+  max-height:3000px;
+  opacity:1;
+}
+.specfaq__item.open .specfaq__icon::after{ opacity:0; }
+
+.specfaq__answer-inner{
+  padding:0 18px 18px;
+}
+.specfaq__answer-inner p{
+  margin-top:12px;
+  color:rgba(0,0,0,.76);
+  line-height:1.75;
+  font-size:14.5px;
+}
+
+.specfaq__sub{
+  margin-top:16px;
+  font-size:15px;
+  font-weight:900;
+  color:#111;
+}
+.specfaq__ul{
+  margin-top:10px;
+  padding-left:18px;
+}
+.specfaq__ul li{
+  margin:8px 0;
+  color:rgba(0,0,0,.76);
+  line-height:1.65;
+  font-size:14.5px;
+}
+
+@media (hover:hover){
+  .specfaq__question:hover .specfaq__icon{ background:#fff0f6; }
+}
+
+/* ================= TUITION ================= */
+.tuition{
+  background:#ffffff;
+  padding:80px 0;
+  text-align:center;
+}
+
+.tuition__inner{ width:min(800px, 92%); margin:0 auto; }
+
+.tuition__title{
+  font-size:clamp(24px, 3vw, 36px);
+  font-weight:900;
+  color: var(--ink);
+  letter-spacing:-.5px;
+  margin-bottom:18px;
+}
+
+.tuition__price{
+  margin-top:12px;
+  font-size:clamp(32px, 5vw, 52px);
+  font-weight:900;
+  color:#000;
+  letter-spacing:-1px;
+}
+
+/* ================= APPLICATIONS ================= */
+.applications{
+  background:#ffffff;
+  padding:80px 0;
+}
+
+.applications__container{ width:min(1100px, 92%); margin:0 auto; }
+
+.applications__title{
+  text-align:center;
+  font-size:clamp(26px, 4vw, 42px);
+  font-weight:900;
+  letter-spacing:-.8px;
+  color: var(--ink);
+  margin-bottom:40px;
+}
+
+.applications__grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+  margin-bottom:50px;
+}
+
+.applications__item{
+  text-decoration:none;
+  color:#111;
+  padding:16px 16px;
+  border-radius:18px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(255,182,201,.28);
+  box-shadow:0 14px 34px rgba(0,0,0,.06);
+  transition:transform .2s ease, color .2s ease, box-shadow .2s ease;
+}
+
+.applications__item-title{
+  font-size:18px;
+  font-weight:900;
+  line-height:1.4;
+  margin-bottom:10px;
+}
+
+.applications__item-sub{
+  font-size:14.5px;
+  color:rgba(0,0,0,.65);
+  line-height:1.6;
+  margin-bottom:12px;
+}
+
+.applications__link{
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.3px;
+  color: #d64b77;
+}
+
+@media (hover:hover){
+  .applications__item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 22px 50px rgba(0,0,0,.10);
+    color:#d64b77;
+  }
+}
+
+.applications__video{ display:flex; justify-content:center; }
+.applications__video iframe{
+  width:100%;
+  max-width:760px;
+  aspect-ratio:16/9;
+  border-radius:18px;
+  border:0;
+  box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+/* ================= VFAQ ================= */
+.vfaq{
+  background:#ffffff;
+  padding:80px 0;
+}
+
+.vfaq__title{
+  font-size:clamp(22px, 3.2vw, 36px);
+  font-weight:900;
+  color: var(--ink);
+  letter-spacing:-.6px;
+  margin:0;
+}
+
+.vfaq__list{
+  width:min(920px, 100%);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.vfaq__item{
+  border:1px solid rgba(255,182,201,.28);
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.vfaq__question{
+  width:100%;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+
+  padding:18px 18px;
+  text-align:left;
+}
+
+.vfaq__qtext{
+  font-size:16px;
+  font-weight:900;
+  color:#111;
+  line-height:1.4;
+}
+
+.vfaq__icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  border:1px solid rgba(255,182,201,.55);
+  background:#fff;
+  position:relative;
+  flex:0 0 auto;
+  transition:transform .2s ease, background .2s ease;
+}
+
+.vfaq__icon::before,
+.vfaq__icon::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:16px;
+  height:2px;
+  background:#111;
+  transform:translate(-50%, -50%);
+  transition:opacity .2s ease;
+}
+.vfaq__icon::after{
+  transform:translate(-50%, -50%) rotate(90deg);
+}
+
+.vfaq__answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .35s ease, opacity .25s ease;
+  opacity:0;
+}
+.vfaq__item.open .vfaq__answer{
+  max-height:1200px;
+  opacity:1;
+}
+.vfaq__item.open .vfaq__icon{
+  background:#fff0f6;
+  transform:translateY(-1px);
+}
+.vfaq__item.open .vfaq__icon::after{ opacity:0; }
+
+.vfaq__answer-inner{ padding:18px; }
+
+.vfaq__ol,
+.vfaq__ul{
+  padding-left:18px;
+  margin-top:12px;
+}
+
+.vfaq__ol li,
+.vfaq__ul li{
+  margin:8px 0;
+  color:rgba(0,0,0,.78);
+  line-height:1.65;
+  font-size:14.5px;
+}
+
+.vfaq__block{
+  margin-top:12px;
+  padding:12px 12px;
+  border:1px solid rgba(255,182,201,.28);
+  border-radius:14px;
+  background:#fff7fb;
+}
+
+.vfaq__label{
+  font-weight:900;
+  color:#111;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.vfaq__rows{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:8px;
+}
+
+.vfaq__row{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.vfaq__muted{ color:rgba(0,0,0,.55); font-size:13.5px; }
+.vfaq__text{ color:rgba(0,0,0,.8); font-weight:900; font-size:14px; }
+
+/* =========================
+   ADAPTIVE
+========================= */
+
+/* таблица в карточки (твоя логика) */
+@media (max-width:820px){
+  .programs-layout{
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .abit-anime--left{
+    justify-self:center;
+    width: min(280px, 76%);
+    transform:none;
+  }
+
+  .programs-table thead{ display:none; }
+  .programs-table,
+  .programs-table tbody,
+  .programs-table tr,
+  .programs-table td{ display:block; width:100%; }
+
+  .programs-table tbody tr{
+    padding:14px 14px;
+    border-bottom:1px solid rgba(0,0,0,.06);
+  }
+
+  .programs-table td{ border:none; padding:10px 6px; }
+
+  .programs-table td::before{
+    content:attr(data-label);
+    display:block;
+    font-size:12px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    color:rgba(0,0,0,.45);
+    margin-bottom:4px;
+  }
+}
+
+/* заголовок + аниме в колонку */
+@media (max-width:900px){
+  .applications__grid{ grid-template-columns:1fr 1fr; }
+
+  .section-head{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .abit-anime--head-left,
+  .abit-anime--head-right{
+    width: min(280px, 76%);
+    transform:none;
+  }
+}
+
+@media (max-width:600px){
+  .applications{ padding:60px 0; }
+  .applications__grid{ grid-template-columns:1fr; gap:18px; }
+  .applications__item-title{ font-size:16px; }
+  .applications__video iframe{ max-width:100%; }
+}
+
+@media (max-width:520px){
+  .vfaq{ padding:60px 0; }
+  .specfaq{ padding:60px 0; }
+
+  .vfaq__question,
+  .specfaq__question{ padding:16px; }
+
+  .vfaq__qtext,
+  .specfaq__qtext{ font-size:15px; }
+
+  .vfaq__answer-inner{ padding:0 16px 16px; }
+  .specfaq__answer-inner{ padding:0 16px 16px; }
+
+  .vfaq__icon,
+  .specfaq__icon{ width:40px; height:40px; }
+
+  .vfaq__row{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+/* table + anime (таблица слева, аниме справа) */
+.programs-layout{
+  display:grid;
+  grid-template-columns: 1fr minmax(160px, 320px);
+  gap: 22px;
+  align-items: end;
+}
+
+/* возле таблицы справа */
+.abit-anime--right{
+  width: clamp(170px, 20vw, 320px);
+  align-self: end;
+  justify-self: end;
+  transform: translateY(6px);
+}
+
+/* адаптив: в колонку, картинка по центру */
+@media (max-width:820px){
+  .programs-layout{
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .abit-anime--right{
+    justify-self:center;
+    width: min(280px, 76%);
+    transform:none;
+  }
+}

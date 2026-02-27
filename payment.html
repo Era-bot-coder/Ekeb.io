@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оплата за обучение</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+
+  <!-- HEADER (как у тебя в других страницах) -->
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="navbar__brand">
+        <img src="./img/Ellipse_4.png" alt="Логотип" class="navbar__logo" />
+      </a>
+
+      <div class="navbar__right">
+        <div class="navbar__meta">
+          <a href="index.html" class="navbar__lang">KAZ</a>
+          <a href="indexen.html" class="navbar__lang">ENG</a>
+          <a href="tel:+77003543772" class="navbar__phone">+7 (700) 354-37-72</a>
+        </div>
+
+        <button class="navbar__burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <aside class="drawer" id="drawer" aria-hidden="true">
+        <button class="drawer__close" id="drawerClose" aria-label="Закрыть меню">×</button>
+
+        <ul class="drawer__links">
+          <li><a href="index.html" class="drawer__link">Главная</a></li>
+          <li><a href="about.html" class="drawer__link">О нас</a></li>
+          <li><a href="abiturent.html" class="drawer__link">Абитуриенту</a></li>
+
+          <li class="drawer__item drawer__item--has-sub">
+            <button class="drawer__link drawer__toggle" type="button" aria-expanded="false">
+              <span>Студенту</span>
+              <span class="drawer__chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="drawer__sub" aria-hidden="true">
+              <div class="drawer__sub-inner">
+                <a href="rules.html" class="drawer__sublink">Правила внутреннего распорядка</a>
+                <a href="schedule.html" class="drawer__sublink">Расписание занятий и звонков</a>
+                <a href="consultations.html" class="drawer__sublink">Расписание консультации и экзаменов</a>
+                <a href="study-process.html" class="drawer__sublink">График учебного процесса</a>
+                <a href="library.html" class="drawer__sublink">Библиотека</a>
+                <a href="useful-links.html" class="drawer__sublink">Полезные ссылки</a>
+                <a href="trust-mail.html" class="drawer__sublink">Электронный ящик доверия</a>
+                <a href="student-center.html" class="drawer__sublink">Центр обслуживания студентов</a>
+                <a href="payment.html" class="drawer__sublink">Оплата за обучение</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="study.html" class="drawer__link">Обучение</a></li>
+        </ul>
+
+        <div class="drawer__socials">
+          <a href="#" class="drawer__social" aria-label="Instagram"><img src="./img/social.png" alt="Instagram" /></a>
+          <a href="#" class="drawer__social" aria-label="WhatsApp"><img src="./img/whatsapp.png" alt="WhatsApp" /></a>
+          <a href="#" class="drawer__social" aria-label="TikTok"><img src="./img/social-media.png" alt="TikTok" /></a>
+          <a href="#" class="drawer__social" aria-label="Telegram"><img src="./img/communication.png" alt="Telegram" /></a>
+        </div>
+      </aside>
+
+      <div class="backdrop" id="backdrop"></div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT (твой код без изменений) -->
+  <main>
+    <section class="pay" id="pay">
+      <div class="container pay__container">
+
+        <!-- TOP: text + image -->
+        <div class="pay__top">
+          <div class="pay__info">
+            <h2 class="pay__title">Оплата за обучение</h2>
+
+            <div class="pay__block">
+              <h3 class="pay__subtitle">Способы оплаты:</h3>
+              <ol class="pay__list">
+                <li>В кассе колледжа</li>
+                <li>Через мобильное приложение: AO KaspiBank — kaspi.kz</li>
+                <li>Через наш сайт</li>
+                <li>В отделение банка второго уровня (банк может взимать комиссию)</li>
+              </ol>
+            </div>
+
+            <div class="pay__block">
+              <h3 class="pay__subtitle">Реквизиты:</h3>
+
+              <dl class="pay__dl">
+                <div class="pay__row">
+                  <dt>Наименование</dt>
+                  <dd>ЧУ "Европейский высший колледж экономики, бизнеса и права"</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>Цель платежа</dt>
+                  <dd>оплата за обучение</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>РНН</dt>
+                  <dd>061800297163</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>БИН</dt>
+                  <dd>100740008279</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>ИИК</dt>
+                  <dd>KZ96722S000008780591</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>КБЕ</dt>
+                  <dd>17</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>КНП</dt>
+                  <dd>861</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>Банк</dt>
+                  <dd>АО «Kaspi Bank»</dd>
+                </div>
+
+                <div class="pay__row">
+                  <dt>БИК</dt>
+                  <dd>CASPKZKA</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <!-- RIGHT: image -->
+          <div class="pay__media">
+            <img src="./img/Group_1_1.png.webp" alt="Оплата" class="pay__image">
+          </div>
+        </div>
+
+        <!-- BOTTOM: centered text + price + button -->
+        <div class="pay__bottom">
+          <p class="pay__note">Оплата за обучение за учебный год</p>
+          <div class="pay__price">380 000 ₸</div>
+
+          <a class="pay__btn" href="#" role="button" aria-label="Оплатить обучение">
+            Оплатить
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (как у тебя в других страницах) -->
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__col">
+        <h3 class="footer__title">Адрес</h3>
+        <p class="footer__text">
+          Республика Казахстан, г. Актобе,<br>
+          район Астана, ул. Маресьева 105
+        </p>
+
+        <h3 class="footer__title">График</h3>
+        <p class="footer__text">
+          ПН-ПТ с 9:00 до 18:00
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <a href="tel:+77003543772" class="footer__link">+7 (700) 354-37-72</a>
+        <a href="mailto:info@ekeb.edu.kz" class="footer__link">info@ekeb.edu.kz</a>
+        <a href="mailto:ekeb@edu.kz" class="footer__link">ekeb@edu.kz</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Полезные ссылки</h3>
+
+        <a href="#" class="footer__link">Электронное правительство Республики Казахстан</a>
+        <a href="#" class="footer__link">Юридические услуги "Әділет"</a>
+        <a href="#" class="footer__link">НАО "Talap"</a>
+        <a href="#" class="footer__link">НОБД</a>
+        <a href="#" class="footer__link">АИС "Автоматизация государственных услуг"</a>
+        <a href="#" class="footer__link">Реестр образовательных программ</a>
+        <a href="#" class="footer__link">Национальная служба реагирования на компьютерные инциденты</a>
+        <a href="#" class="footer__link">Министерство просвещения Республики Казахстан</a>
+        <a href="#" class="footer__link">Департамент по обеспечению качества в сфере образования Актюбинской области</a>
+        <a href="#" class="footer__link">Национальная платформа непрерывного профессионального развития педагога</a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      © Все права защищены
+    </div>
+  </footer>
+
+  <script src="./burger.js"></script>
+</body>
+</html>

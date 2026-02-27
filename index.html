@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EKEB</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page" id="home">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="navbar__brand">
+          <img src="./img/Ellipse_4.png" alt="Логотип" class="navbar__logo" />
+        </a>
+
+        <div class="navbar__right">
+          <div class="navbar__meta">
+            <a href="indexkz.html" class="navbar__lang">KAZ</a>
+            <a href="indexen.html" class="navbar__lang">ENG</a>
+            <a href="tel:+77003543772" class="navbar__phone">+7 (700) 354-37-72</a>
+          </div>
+
+          <button class="navbar__burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <aside class="drawer" id="drawer" aria-hidden="true">
+          <button class="drawer__close" id="drawerClose" aria-label="Закрыть меню">×</button>
+
+          <ul class="drawer__links">
+            <li><a href="index.html" class="drawer__link">Главная</a></li>
+            <li><a href="about.html" class="drawer__link">О нас</a></li>
+            <li><a href="abiturent.html" class="drawer__link">Абитуриенту</a></li>
+
+            <li class="drawer__item drawer__item--has-sub">
+              <button class="drawer__link drawer__toggle" type="button" aria-expanded="false">
+                <span>Студенту</span>
+                <span class="drawer__chev" aria-hidden="true"></span>
+              </button>
+
+              <div class="drawer__sub" aria-hidden="true">
+                <div class="drawer__sub-inner">
+                  <a href="rules.html" class="drawer__sublink">Правила внутреннего распорядка</a>
+                  <a href="schedule.html" class="drawer__sublink">Расписание занятий и звонков</a>
+                  <a href="consultations.html" class="drawer__sublink">Расписание консультации и экзаменов</a>
+                  <a href="study-process.html" class="drawer__sublink">График учебного процесса</a>
+                  <a href="library.html" class="drawer__sublink">Библиотека</a>
+                  <a href="useful-links.html" class="drawer__sublink">Полезные ссылки</a>
+                  <a href="trust-mail.html" class="drawer__sublink">Электронный ящик доверия</a>
+                  <a href="student-center.html" class="drawer__sublink">Центр обслуживания студентов</a>
+                  <a href="payment.html" class="drawer__sublink">Оплата за обучение</a>
+                </div>
+              </div>
+            </li>
+
+            <li><a href="study.html" class="drawer__link">Обучение</a></li>
+          </ul>
+
+          <div class="drawer__socials">
+            <a href="#" class="drawer__social" aria-label="Instagram"><img src="./img/social.png" alt="Instagram" /></a>
+            <a href="#" class="drawer__social" aria-label="WhatsApp"><img src="./img/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#" class="drawer__social" aria-label="TikTok"><img src="./img/social-media.png" alt="TikTok" /></a>
+            <a href="#" class="drawer__social" aria-label="Telegram"><img src="./img/communication.png" alt="Telegram" /></a>
+          </div>
+        </aside>
+
+        <div class="backdrop" id="backdrop"></div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <h1 class="hero__title">Добро пожаловать в EKEB ~ня~!!!</h1>
+
+        <div class="hero__media">
+          <img src="./img/ChatGPT Image 24 февр. 2026 г., 23_00_05.png" alt="Фон колледжа" class="hero__image" />
+
+          <!-- аниме-девочка -->
+          <img
+            src="./img/ChatGPT_Image_24_февр._2026_г.__22_42_09-removebg-preview.png"
+            alt="Аниме персонаж"
+            class="hero__anime"
+          />
+        </div>
+
+        <h1 class="hero__subtitle">Что мы предлагаем ~ня~</h1>
+
+        <section class="benefits" aria-label="Преимущества">
+          <div class="benefits__item">🧑🏻‍🎓 3 года обучения</div>
+          <div class="benefits__item">🎉 Яркая студенческая жизнь</div>
+          <div class="benefits__item">💯 90% Трудоустройство</div>
+          <div class="benefits__item">🧑🏻‍💻 Startup community</div>
+        </section>
+      </section>
+
+      <!-- ADMISSION -->
+      <section class="admission" aria-label="Процесс поступления">
+        <h2 class="admission__title">Процесс поступления</h2>
+        <p class="admission__subtitle">Пройдите шаги ниже — это займёт несколько минут, а дальше мы поможем.</p>
+
+        <div class="admission__steps">
+          <article class="step">
+            <div class="step__num">1</div>
+            <div class="step__content">
+              <h3 class="step__title">Выберите специальность</h3>
+              <p class="step__text">Определитесь с направлением и формой обучения. Если сложно — напишите/позвоните, подскажем.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">2</div>
+            <div class="step__content">
+              <h3 class="step__title">Подготовьте документы</h3>
+              <p class="step__text">Соберите основной пакет документов. Точный список уточняйте у приёмной комиссии.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">3</div>
+            <div class="step__content">
+              <h3 class="step__title">Подайте заявку</h3>
+              <p class="step__text">Оставьте заявку онлайн или подайте документы очно. После подачи с вами свяжутся для подтверждения.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">4</div>
+            <div class="step__content">
+              <h3 class="step__title">Подтверждение и зачисление</h3>
+              <p class="step__text">Получите ответ, подпишите документы и получите инструкцию по старту обучения.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Programs (white section) -->
+    <section class="programs-section" id="programs" aria-label="Специальности колледжа">
+      <div class="container">
+        <h2 class="programs-title">Специальности колледжа</h2>
+
+        <div class="table-wrapper">
+          <table class="programs-table" role="table">
+            <thead>
+              <tr>
+                <th>Код</th>
+                <th>Специальность</th>
+                <th>Квалификация</th>
+                <th>Срок обучения</th>
+                <th>Форма</th>
+                <th>Финансирование</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td data-label="Код">04110100</td>
+                <td data-label="Специальность">Учет и аудит</td>
+                <td data-label="Квалификация">4S04110102<br>Бухгалтер</td>
+                <td data-label="Срок обучения">9 класс — 2 г. 10 мес.<br>11 класс — 1 г. 10 мес.</td>
+                <td data-label="Форма">Очная</td>
+                <td data-label="Финансирование">Бюджет / Договор</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">04210100</td>
+                <td data-label="Специальность">Правоведение</td>
+                <td data-label="Квалификация">4S04210101<br>Юрист</td>
+                <td data-label="Срок обучения">9 класс — 2 г. 10 мес.<br>11 класс — 1 г. 10 мес.</td>
+                <td data-label="Форма">Очная</td>
+                <td data-label="Финансирование">Договор</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">04120200</td>
+                <td data-label="Специальность">Оценка</td>
+                <td data-label="Квалификация">4S04120202<br>Техник-оценщик</td>
+                <td data-label="Срок обучения">9 класс — 2 г. 10 мес.<br>11 класс — 1 г. 10 мес.</td>
+                <td data-label="Форма">Очная</td>
+                <td data-label="Финансирование">Бюджет / Договор</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">06130100</td>
+                <td data-label="Специальность">Программное обеспечение</td>
+                <td data-label="Квалификация">4S06130103<br>Разработчик программного обеспечения</td>
+                <td data-label="Срок обучения">9 класс — 3 г. 10 мес.<br>11 класс — 2 г. 10 мес.</td>
+                <td data-label="Форма">Очная</td>
+                <td data-label="Финансирование">Бюджет / Договор</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">06130100</td>
+                <td data-label="Специальность">Программное обеспечение</td>
+                <td data-label="Квалификация">4S06130104<br>Техник по сопровождению и тестированию ПО</td>
+                <td data-label="Срок обучения">9 класс — 3 г. 10 мес.</td>
+                <td data-label="Форма">Очная</td>
+                <td data-label="Финансирование">Бюджет / Договор</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- аниме рядом со специальностями (не удаляем) -->
+          <img src="./img/ChatGPT Image 24 февр. 2026 г., .png" alt="аниме-девочка">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="FAQ" aria-label="Часто задаваемые вопросы">
+      <div class="container">
+        <h2 class="faq__title">Часто задаваемые вопросы</h2>
+
+        <div class="faq__list">
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">Срок обучения в EKEB?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Срок обучения в EKEB — 3 года. </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">Какова стоимость обучения у вас в колледже?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Оплата за обучения за учебный год
+380000тг.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">Есть ли у вас общежитие?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Да.Наше общежитие находится на ул.Жубанова и в 15 минутах от колледжа</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- аниме справа у FAQ (не удаляем) -->
+      <img src="./img/ChatGPT_Image_25_февр._2026_г.__16_28_36-removebg-preview.png" alt="">
+
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location">
+      <div class="container location__grid">
+
+        <div class="location__info">
+          <h2 class="location__title">Где мы находимся?</h2>
+
+          <p class="location__address">
+            Республика Казахстан,<br>
+            г. Актобе,<br>
+            район Астана,<br>
+            ул. Маресьева 105
+          </p>
+
+          <p class="location__desc">
+            Мы находимся в удобной локации с хорошей транспортной доступностью.
+          </p>
+        </div>
+
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.8761396288605!2d57.1551726!3d50.2942399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4182222c03237189%3A0xf9ea5d3b51cbeac4!2z0YPQuy4g0JzQsNGA0LXRgdGM0LXQstCwIDEwNSwg0JDQutGC0L7QsdC1IDAzMDAxOQ!5e0!3m2!1sru!2skz!4v1771798898176!5m2!1sru!2skz"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+
+        <div class="footer__col">
+          <h3 class="footer__title">Адрес</h3>
+          <p class="footer__text">
+            Республика Казахстан, г. Актобе,<br>
+            район Астана, ул. Маресьева 105
+          </p>
+
+          <h3 class="footer__title">График</h3>
+          <p class="footer__text">
+            ПН-ПТ с 9:00 до 18:00
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <a href="tel:+77003543772" class="footer__link">+7 (700) 354-37-72</a>
+          <a href="mailto:info@ekeb.edu.kz" class="footer__link">info@ekeb.edu.kz</a>
+          <a href="mailto:ekeb@edu.kz" class="footer__link">ekeb@edu.kz</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Полезные ссылки</h3>
+
+          <a href="#" class="footer__link">Электронное правительство Республики Казахстан</a>
+          <a href="#" class="footer__link">Юридические услуги "Әділет"</a>
+          <a href="#" class="footer__link">НАО "Talap"</a>
+          <a href="#" class="footer__link">НОБД</a>
+          <a href="#" class="footer__link">АИС "Автоматизация государственных услуг"</a>
+          <a href="#" class="footer__link">Реестр образовательных программ</a>
+          <a href="#" class="footer__link">Национальная служба реагирования на компьютерные инциденты</a>
+          <a href="#" class="footer__link">Министерство просвещения Республики Казахстан</a>
+          <a href="#" class="footer__link">Департамент по обеспечению качества в сфере образования Актюбинской области</a>
+          <a href="#" class="footer__link">Национальная платформа непрерывного профессионального развития педагога</a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        © Все права защищены
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./burger.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EKEB</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page" id="home">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="indexen.html" class="navbar__brand">
+          <img src="./img/Ellipse_4.png" alt="Logo" class="navbar__logo" />
+        </a>
+
+        <div class="navbar__right">
+          <div class="navbar__meta">
+            <a href="indexkz.html" class="navbar__lang">KAZ</a>
+            <a href="index.html" class="navbar__lang">RU</a>
+            <a href="tel:+77003543772" class="navbar__phone">+7 (700) 354-37-72</a>
+          </div>
+
+          <button class="navbar__burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <aside class="drawer" id="drawer" aria-hidden="true">
+          <button class="drawer__close" id="drawerClose" aria-label="Close menu">×</button>
+
+          <ul class="drawer__links">
+            <li><a href="indexen.html" class="drawer__link">Home</a></li>
+            <li><a href="about.html" class="drawer__link">About us</a></li>
+            <li><a href="abiturent.html" class="drawer__link">For applicants</a></li>
+
+            <li class="drawer__item drawer__item--has-sub">
+              <button class="drawer__link drawer__toggle" type="button" aria-expanded="false">
+                <span>For students</span>
+                <span class="drawer__chev" aria-hidden="true"></span>
+              </button>
+
+              <div class="drawer__sub" aria-hidden="true">
+                <div class="drawer__sub-inner">
+                  <a href="rules.html" class="drawer__sublink">Internal rules</a>
+                  <a href="schedule.html" class="drawer__sublink">Class & bell schedule</a>
+                  <a href="consultations.html" class="drawer__sublink">Consultations & exams schedule</a>
+                  <a href="study-process.html" class="drawer__sublink">Academic calendar</a>
+                  <a href="library.html" class="drawer__sublink">Library</a>
+                  <a href="useful-links.html" class="drawer__sublink">Useful links</a>
+                  <a href="trust-mail.html" class="drawer__sublink">Trust mailbox</a>
+                  <a href="student-center.html" class="drawer__sublink">Student service center</a>
+                  <a href="payment.html" class="drawer__sublink">Tuition payment</a>
+                </div>
+              </div>
+            </li>
+
+            <li><a href="study.html" class="drawer__link">Study</a></li>
+          </ul>
+
+          <div class="drawer__socials">
+            <a href="#" class="drawer__social" aria-label="Instagram"><img src="./img/social.png" alt="Instagram" /></a>
+            <a href="#" class="drawer__social" aria-label="WhatsApp"><img src="./img/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#" class="drawer__social" aria-label="TikTok"><img src="./img/social-media.png" alt="TikTok" /></a>
+            <a href="#" class="drawer__social" aria-label="Telegram"><img src="./img/communication.png" alt="Telegram" /></a>
+          </div>
+        </aside>
+
+        <div class="backdrop" id="backdrop"></div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <h1 class="hero__title">Welcome to EKEB ~nya~!!!</h1>
+
+        <div class="hero__media">
+          <img src="./img/ChatGPT Image 24 февр. 2026 г., 23_00_05.png" alt="College background" class="hero__image" />
+
+          <img
+            src="./img/ChatGPT_Image_24_февр._2026_г.__22_42_09-removebg-preview.png"
+            alt="Anime character"
+            class="hero__anime"
+          />
+        </div>
+
+        <h1 class="hero__subtitle">What we offer ~nya~</h1>
+
+        <section class="benefits" aria-label="Benefits">
+          <div class="benefits__item">🧑🏻‍🎓 3 years of study</div>
+          <div class="benefits__item">🎉 A vibrant student life</div>
+          <div class="benefits__item">💯 90% employment rate</div>
+          <div class="benefits__item">🧑🏻‍💻 Startup community</div>
+        </section>
+      </section>
+
+      <!-- ADMISSION -->
+      <section class="admission" aria-label="Admission process">
+        <h2 class="admission__title">Admission process</h2>
+        <p class="admission__subtitle">Follow the steps below — it takes a few minutes, and then we’ll help you further.</p>
+
+        <div class="admission__steps">
+          <article class="step">
+            <div class="step__num">1</div>
+            <div class="step__content">
+              <h3 class="step__title">Choose a program</h3>
+              <p class="step__text">Pick your field and study format. If you’re not sure — call/message us, we’ll help.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">2</div>
+            <div class="step__content">
+              <h3 class="step__title">Prepare documents</h3>
+              <p class="step__text">Collect the basic document package. Please confirm the exact list with the admissions office.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">3</div>
+            <div class="step__content">
+              <h3 class="step__title">Submit an application</h3>
+              <p class="step__text">Apply online or submit documents in person. After that, we’ll contact you to confirm.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">4</div>
+            <div class="step__content">
+              <h3 class="step__title">Confirmation & enrollment</h3>
+              <p class="step__text">Get a response, sign the documents, and receive instructions to start studying.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Programs -->
+    <section class="programs-section" id="programs" aria-label="College programs">
+      <div class="container">
+        <h2 class="programs-title">College programs</h2>
+
+        <div class="table-wrapper">
+          <table class="programs-table" role="table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Program</th>
+                <th>Qualification</th>
+                <th>Duration</th>
+                <th>Format</th>
+                <th>Funding</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td data-label="Code">04110100</td>
+                <td data-label="Program">Accounting and Audit</td>
+                <td data-label="Qualification">4S04110102<br>Accountant</td>
+                <td data-label="Duration">Grade 9 — 2y 10m<br>Grade 11 — 1y 10m</td>
+                <td data-label="Format">Full-time</td>
+                <td data-label="Funding">State / Contract</td>
+              </tr>
+
+              <tr>
+                <td data-label="Code">04210100</td>
+                <td data-label="Program">Law</td>
+                <td data-label="Qualification">4S04210101<br>Lawyer</td>
+                <td data-label="Duration">Grade 9 — 2y 10m<br>Grade 11 — 1y 10m</td>
+                <td data-label="Format">Full-time</td>
+                <td data-label="Funding">Contract</td>
+              </tr>
+
+              <tr>
+                <td data-label="Code">04120200</td>
+                <td data-label="Program">Valuation</td>
+                <td data-label="Qualification">4S04120202<br>Valuation Technician</td>
+                <td data-label="Duration">Grade 9 — 2y 10m<br>Grade 11 — 1y 10m</td>
+                <td data-label="Format">Full-time</td>
+                <td data-label="Funding">State / Contract</td>
+              </tr>
+
+              <tr>
+                <td data-label="Code">06130100</td>
+                <td data-label="Program">Software</td>
+                <td data-label="Qualification">4S06130103<br>Software Developer</td>
+                <td data-label="Duration">Grade 9 — 3y 10m<br>Grade 11 — 2y 10m</td>
+                <td data-label="Format">Full-time</td>
+                <td data-label="Funding">State / Contract</td>
+              </tr>
+
+              <tr>
+                <td data-label="Code">06130100</td>
+                <td data-label="Program">Software</td>
+                <td data-label="Qualification">4S06130104<br>Software Support & Testing Technician</td>
+                <td data-label="Duration">Grade 9 — 3y 10m</td>
+                <td data-label="Format">Full-time</td>
+                <td data-label="Funding">State / Contract</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <img src="./img/ChatGPT Image 24 февр. 2026 г., .png" alt="anime girl">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="FAQ" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <h2 class="faq__title">Frequently Asked Questions</h2>
+
+        <div class="faq__list">
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">How long is the study period at EKEB?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>The study period at EKEB is 3 years.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">How much is tuition per year?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Tuition fee per academic year:
+380000 KZT.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">Do you have a dormitory?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Yes. Our dormitory is on Zhubanov street and is 15 minutes away from the college.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <img src="./img/ChatGPT_Image_25_февр._2026_г.__16_28_36-removebg-preview.png" alt="">
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location">
+      <div class="container location__grid">
+
+        <div class="location__info">
+          <h2 class="location__title">Where are we located?</h2>
+
+          <p class="location__address">
+            Republic of Kazakhstan,<br>
+            Aktobe,<br>
+            Astana district,<br>
+            Maresev St. 105
+          </p>
+
+          <p class="location__desc">
+            We are located in a convenient area with good transport accessibility.
+          </p>
+        </div>
+
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.8761396288605!2d57.1551726!3d50.2942399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4182222c03237189%3A0xf9ea5d3b51cbeac4!2z0YPQuy4g0JzQsNGA0LXRgdGM0LXQstCwIDEwNSwg0JDQutGC0L7QsdC1IDAzMDAxOQ!5e0!3m2!1sru!2skz!4v1771798898176!5m2!1sru!2skz"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+
+        <div class="footer__col">
+          <h3 class="footer__title">Address</h3>
+          <p class="footer__text">
+            Republic of Kazakhstan, Aktobe,<br>
+            Astana district, Maresev St. 105
+          </p>
+
+          <h3 class="footer__title">Hours</h3>
+          <p class="footer__text">
+            Mon–Fri, 9:00 to 18:00
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contacts</h3>
+          <a href="tel:+77003543772" class="footer__link">+7 (700) 354-37-72</a>
+          <a href="mailto:info@ekeb.edu.kz" class="footer__link">info@ekeb.edu.kz</a>
+          <a href="mailto:ekeb@edu.kz" class="footer__link">ekeb@edu.kz</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Useful links</h3>
+
+          <a href="#" class="footer__link">E-Government of the Republic of Kazakhstan</a>
+          <a href="#" class="footer__link">Legal services “Әділет”</a>
+          <a href="#" class="footer__link">NAO “Talap”</a>
+          <a href="#" class="footer__link">NOBD</a>
+          <a href="#" class="footer__link">AIS “Automation of public services”</a>
+          <a href="#" class="footer__link">Register of educational programs</a>
+          <a href="#" class="footer__link">National cyber incident response service</a>
+          <a href="#" class="footer__link">Ministry of Education of the Republic of Kazakhstan</a>
+          <a href="#" class="footer__link">Aktobe region education quality department</a>
+          <a href="#" class="footer__link">National platform for continuous teacher development</a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        © All rights reserved
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./burger.js"></script>
+</body>
+</html>

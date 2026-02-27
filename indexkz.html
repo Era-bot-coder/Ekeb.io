@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EKEB</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page" id="home">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="indexkz.html" class="navbar__brand">
+          <img src="./img/Ellipse_4.png" alt="Логотип" class="navbar__logo" />
+        </a>
+
+        <div class="navbar__right">
+          <div class="navbar__meta">
+            <a href="index.html" class="navbar__lang">RU</a>
+            <a href="indexen.html" class="navbar__lang">ENG</a>
+            <a href="tel:+77003543772" class="navbar__phone">+7 (700) 354-37-72</a>
+          </div>
+
+          <button class="navbar__burger" id="burgerBtn" aria-label="Мәзірді ашу" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <aside class="drawer" id="drawer" aria-hidden="true">
+          <button class="drawer__close" id="drawerClose" aria-label="Мәзірді жабу">×</button>
+
+          <ul class="drawer__links">
+            <li><a href="indexkz.html" class="drawer__link">Басты бет</a></li>
+            <li><a href="about.html" class="drawer__link">Біз туралы</a></li>
+            <li><a href="abiturent.html" class="drawer__link">Талапкерге</a></li>
+
+            <li class="drawer__item drawer__item--has-sub">
+              <button class="drawer__link drawer__toggle" type="button" aria-expanded="false">
+                <span>Студентке</span>
+                <span class="drawer__chev" aria-hidden="true"></span>
+              </button>
+
+              <div class="drawer__sub" aria-hidden="true">
+                <div class="drawer__sub-inner">
+                  <a href="rules.html" class="drawer__sublink">Ішкі тәртіп ережелері</a>
+                  <a href="schedule.html" class="drawer__sublink">Сабақ және қоңырау кестесі</a>
+                  <a href="consultations.html" class="drawer__sublink">Кеңес беру және емтихан кестесі</a>
+                  <a href="study-process.html" class="drawer__sublink">Оқу үдерісінің кестесі</a>
+                  <a href="library.html" class="drawer__sublink">Кітапхана</a>
+                  <a href="useful-links.html" class="drawer__sublink">Пайдалы сілтемелер</a>
+                  <a href="trust-mail.html" class="drawer__sublink">Сенім жәшігі (электронды пошта)</a>
+                  <a href="student-center.html" class="drawer__sublink">Студенттерге қызмет көрсету орталығы</a>
+                  <a href="payment.html" class="drawer__sublink">Оқу ақысын төлеу</a>
+                </div>
+              </div>
+            </li>
+
+            <li><a href="study.html" class="drawer__link">Оқу</a></li>
+          </ul>
+
+          <div class="drawer__socials">
+            <a href="#" class="drawer__social" aria-label="Instagram"><img src="./img/social.png" alt="Instagram" /></a>
+            <a href="#" class="drawer__social" aria-label="WhatsApp"><img src="./img/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#" class="drawer__social" aria-label="TikTok"><img src="./img/social-media.png" alt="TikTok" /></a>
+            <a href="#" class="drawer__social" aria-label="Telegram"><img src="./img/communication.png" alt="Telegram" /></a>
+          </div>
+        </aside>
+
+        <div class="backdrop" id="backdrop"></div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <h1 class="hero__title">EKEB-ке қош келдіңіз ~ня~!!!</h1>
+
+        <div class="hero__media">
+          <img src="./img/ChatGPT Image 24 февр. 2026 г., 23_00_05.png" alt="Колледж фоны" class="hero__image" />
+
+          <img
+            src="./img/ChatGPT_Image_24_февр._2026_г.__22_42_09-removebg-preview.png"
+            alt="Аниме кейіпкері"
+            class="hero__anime"
+          />
+        </div>
+
+        <h1 class="hero__subtitle">Біз не ұсынамыз ~ня~</h1>
+
+        <section class="benefits" aria-label="Артықшылықтар">
+          <div class="benefits__item">🧑🏻‍🎓 3 жыл оқу</div>
+          <div class="benefits__item">🎉 Жарқын студенттік өмір</div>
+          <div class="benefits__item">💯 90% Жұмысқа орналасу</div>
+          <div class="benefits__item">🧑🏻‍💻 Startup community</div>
+        </section>
+      </section>
+
+      <!-- ADMISSION -->
+      <section class="admission" aria-label="Қабылдау үдерісі">
+        <h2 class="admission__title">Қабылдау үдерісі</h2>
+        <p class="admission__subtitle">Төмендегі қадамдарды орындаңыз — бірнеше минут, әрі қарай біз көмектесеміз.</p>
+
+        <div class="admission__steps">
+          <article class="step">
+            <div class="step__num">1</div>
+            <div class="step__content">
+              <h3 class="step__title">Мамандықты таңдаңыз</h3>
+              <p class="step__text">Бағыт пен оқу формасын таңдаңыз. Қиын болса — жазыңыз/қоңырау шалыңыз, көмектесеміз.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">2</div>
+            <div class="step__content">
+              <h3 class="step__title">Құжаттарды дайындаңыз</h3>
+              <p class="step__text">Негізгі құжаттар пакетін жинаңыз. Нақты тізімді қабылдау комиссиясынан нақтылаңыз.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">3</div>
+            <div class="step__content">
+              <h3 class="step__title">Өтініш беріңіз</h3>
+              <p class="step__text">Онлайн өтініш қалдырыңыз немесе құжаттарды офлайн тапсырыңыз. Кейін сізбен растау үшін хабарласады.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <div class="step__num">4</div>
+            <div class="step__content">
+              <h3 class="step__title">Растау және қабылдау</h3>
+              <p class="step__text">Жауап алыңыз, құжаттарға қол қойыңыз және оқу бастау бойынша нұсқаулық алыңыз.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Programs -->
+    <section class="programs-section" id="programs" aria-label="Колледж мамандықтары">
+      <div class="container">
+        <h2 class="programs-title">Колледж мамандықтары</h2>
+
+        <div class="table-wrapper">
+          <table class="programs-table" role="table">
+            <thead>
+              <tr>
+                <th>Код</th>
+                <th>Мамандық</th>
+                <th>Біліктілік</th>
+                <th>Оқу мерзімі</th>
+                <th>Форма</th>
+                <th>Қаржыландыру</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td data-label="Код">04110100</td>
+                <td data-label="Мамандық">Есеп және аудит</td>
+                <td data-label="Біліктілік">4S04110102<br>Бухгалтер</td>
+                <td data-label="Оқу мерзімі">9 сынып — 2 ж. 10 ай<br>11 сынып — 1 ж. 10 ай</td>
+                <td data-label="Форма">Күндізгі</td>
+                <td data-label="Қаржыландыру">Бюджет / Шарт</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">04210100</td>
+                <td data-label="Мамандық">Құқықтану</td>
+                <td data-label="Біліктілік">4S04210101<br>Заңгер</td>
+                <td data-label="Оқу мерзімі">9 сынып — 2 ж. 10 ай<br>11 сынып — 1 ж. 10 ай</td>
+                <td data-label="Форма">Күндізгі</td>
+                <td data-label="Қаржыландыру">Шарт</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">04120200</td>
+                <td data-label="Мамандық">Бағалау</td>
+                <td data-label="Біліктілік">4S04120202<br>Бағалаушы-техник</td>
+                <td data-label="Оқу мерзімі">9 сынып — 2 ж. 10 ай<br>11 сынып — 1 ж. 10 ай</td>
+                <td data-label="Форма">Күндізгі</td>
+                <td data-label="Қаржыландыру">Бюджет / Шарт</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">06130100</td>
+                <td data-label="Мамандық">Бағдарламалық қамтамасыз ету</td>
+                <td data-label="Біліктілік">4S06130103<br>Бағдарламалық қамту әзірлеушісі</td>
+                <td data-label="Оқу мерзімі">9 сынып — 3 ж. 10 ай<br>11 сынып — 2 ж. 10 ай</td>
+                <td data-label="Форма">Күндізгі</td>
+                <td data-label="Қаржыландыру">Бюджет / Шарт</td>
+              </tr>
+
+              <tr>
+                <td data-label="Код">06130100</td>
+                <td data-label="Мамандық">Бағдарламалық қамтамасыз ету</td>
+                <td data-label="Біліктілік">4S06130104<br>БҚ сүйемелдеу және тестілеу технигі</td>
+                <td data-label="Оқу мерзімі">9 сынып — 3 ж. 10 ай</td>
+                <td data-label="Форма">Күндізгі</td>
+                <td data-label="Қаржыландыру">Бюджет / Шарт</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <img src="./img/ChatGPT Image 24 февр. 2026 г., .png" alt="аниме-девочка">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="FAQ" aria-label="Жиі қойылатын сұрақтар">
+      <div class="container">
+        <h2 class="faq__title">Жиі қойылатын сұрақтар</h2>
+
+        <div class="faq__list">
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">EKEB-тегі оқу мерзімі қанша?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>EKEB-тегі оқу мерзімі — 3 жыл.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">Колледжде оқу ақысы қанша?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Оқу жылы үшін төлем:
+380000тг.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="faq__item">
+            <button class="faq__question" type="button" aria-expanded="false">
+              <span class="faq__qtext">Жатақхана бар ма?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                <p>Иә. Жатақханамыз Жұбанов көшесінде және колледжден 15 минут жерде.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <img src="./img/ChatGPT_Image_25_февр._2026_г.__16_28_36-removebg-preview.png" alt="">
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location">
+      <div class="container location__grid">
+
+        <div class="location__info">
+          <h2 class="location__title">Біз қай жерде орналасқанбыз?</h2>
+
+          <p class="location__address">
+            Қазақстан Республикасы,<br>
+            Ақтөбе қ.,<br>
+            Астана ауданы,<br>
+            Маресьев көшесі 105
+          </p>
+
+          <p class="location__desc">
+            Біз ыңғайлы жерде орналасқанбыз және көлік қолжетімділігі жақсы.
+          </p>
+        </div>
+
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.8761396288605!2d57.1551726!3d50.2942399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4182222c03237189%3A0xf9ea5d3b51cbeac4!2z0YPQuy4g0JzQsNGA0LXRgdGM0LXQstCwIDEwNSwg0JDQutGC0L7QsdC1IDAzMDAxOQ!5e0!3m2!1sru!2skz!4v1771798898176!5m2!1sru!2skz"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+
+        <div class="footer__col">
+          <h3 class="footer__title">Мекенжай</h3>
+          <p class="footer__text">
+            Қазақстан Республикасы, Ақтөбе қ.,<br>
+            Астана ауданы, Маресьев көшесі 105
+          </p>
+
+          <h3 class="footer__title">Жұмыс уақыты</h3>
+          <p class="footer__text">
+            ДС–ЖМ 9:00-ден 18:00-ге дейін
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Байланыс</h3>
+          <a href="tel:+77003543772" class="footer__link">+7 (700) 354-37-72</a>
+          <a href="mailto:info@ekeb.edu.kz" class="footer__link">info@ekeb.edu.kz</a>
+          <a href="mailto:ekeb@edu.kz" class="footer__link">ekeb@edu.kz</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Пайдалы сілтемелер</h3>
+
+          <a href="#" class="footer__link">Қазақстан Республикасының электрондық үкіметі</a>
+          <a href="#" class="footer__link">"Әділет" заң қызметтері</a>
+          <a href="#" class="footer__link">НАО "Talap"</a>
+          <a href="#" class="footer__link">НОБД</a>
+          <a href="#" class="footer__link">АИС "Автоматизация государственных услуг"</a>
+          <a href="#" class="footer__link">Білім беру бағдарламаларының реестрі</a>
+          <a href="#" class="footer__link">Компьютерлік инциденттерге әрекет ету ұлттық қызметі</a>
+          <a href="#" class="footer__link">Қазақстан Республикасы Оқу-ағарту министрлігі</a>
+          <a href="#" class="footer__link">Ақтөбе облысының білім сапасын қамтамасыз ету департаменті</a>
+          <a href="#" class="footer__link">Педагогтің үздіксіз кәсіби дамуының ұлттық платформасы</a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        © Барлық құқықтар қорғалған
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./burger.js"></script>
+</body>
+</html>

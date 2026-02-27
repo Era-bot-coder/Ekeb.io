@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абитуриенту</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="abiturient.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="navbar__brand">
+        <img src="./img/Ellipse_4.png" alt="Логотип" class="navbar__logo" />
+      </a>
+
+      <div class="navbar__right">
+        <div class="navbar__meta">
+          <a href="index.html" class="navbar__lang">KAZ</a>
+          <a href="indexen.html" class="navbar__lang">ENG</a>
+          <a href="tel:+77003543772" class="navbar__phone">+7 (700) 354-37-72</a>
+        </div>
+
+        <button class="navbar__burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <aside class="drawer" id="drawer" aria-hidden="true">
+        <button class="drawer__close" id="drawerClose" aria-label="Закрыть меню">×</button>
+
+        <ul class="drawer__links">
+          <li><a href="index.html" class="drawer__link">Главная</a></li>
+          <li><a href="about.html" class="drawer__link">О нас</a></li>
+          <li><a href="abiturent.html" class="drawer__link">Абитуриенту</a></li>
+
+          <li class="drawer__item drawer__item--has-sub">
+            <button class="drawer__link drawer__toggle" type="button" aria-expanded="false">
+              <span>Студенту</span>
+              <span class="drawer__chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="drawer__sub" aria-hidden="true">
+              <div class="drawer__sub-inner">
+                <a href="rules.html" class="drawer__sublink">Правила внутреннего распорядка</a>
+                <a href="schedule.html" class="drawer__sublink">Расписание занятий и звонков</a>
+                <a href="consultations.html" class="drawer__sublink">Расписание консультации и экзаменов</a>
+                <a href="study-process.html" class="drawer__sublink">График учебного процесса</a>
+                <a href="library.html" class="drawer__sublink">Библиотека</a>
+                <a href="useful-links.html" class="drawer__sublink">Полезные ссылки</a>
+                <a href="trust-mail.html" class="drawer__sublink">Электронный ящик доверия</a>
+                <a href="student-center.html" class="drawer__sublink">Центр обслуживания студентов</a>
+                <a href="payment.html" class="drawer__sublink">Оплата за обучение</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="study.html" class="drawer__link">Обучение</a></li>
+        </ul>
+
+        <div class="drawer__socials">
+          <a href="#" class="drawer__social" aria-label="Instagram"><img src="./img/social.png" alt="Instagram" /></a>
+          <a href="#" class="drawer__social" aria-label="WhatsApp"><img src="./img/whatsapp.png" alt="WhatsApp" /></a>
+          <a href="#" class="drawer__social" aria-label="TikTok"><img src="./img/social-media.png" alt="TikTok" /></a>
+          <a href="#" class="drawer__social" aria-label="Telegram"><img src="./img/communication.png" alt="Telegram" /></a>
+        </div>
+      </aside>
+
+      <div class="backdrop" id="backdrop"></div>
+    </nav>
+  </header>
+
+  <main class="abit">
+
+    <!-- ====== SPECIALTIES TABLE ====== -->
+    <section class="programs-section" id="programs" aria-label="Специальности колледжа">
+      <div class="container">
+
+        <h2 class="programs-title">Специальности колледжа ~ня~</h2>
+
+        <!-- layout: table + anime (left) -->
+        <div class="programs-layout">
+          <div class="table-wrapper">
+            <table class="programs-table" role="table">
+              <thead>
+                <tr>
+                  <th>Код</th>
+                  <th>Специальность</th>
+                  <th>Квалификация</th>
+                  <th>Срок обучения</th>
+                  <th>Форма</th>
+                  <th>Финансирование</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td data-label="Код">04110100</td>
+                  <td data-label="Специальность">Учет и аудит</td>
+                  <td data-label="Квалификация">4S04110102<br>Бухгалтер</td>
+                  <td data-label="Срок обучения">9 класс — 2 г. 10 мес.<br>11 класс — 1 г. 10 мес.</td>
+                  <td data-label="Форма">Очная</td>
+                  <td data-label="Финансирование">Бюджет / Договор</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Код">04210100</td>
+                  <td data-label="Специальность">Правоведение</td>
+                  <td data-label="Квалификация">4S04210101<br>Юрист</td>
+                  <td data-label="Срок обучения">9 класс — 2 г. 10 мес.<br>11 класс — 1 г. 10 мес.</td>
+                  <td data-label="Форма">Очная</td>
+                  <td data-label="Финансирование">Договор</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Код">04120200</td>
+                  <td data-label="Специальность">Оценка</td>
+                  <td data-label="Квалификация">4S04120202<br>Техник-оценщик</td>
+                  <td data-label="Срок обучения">9 класс — 2 г. 10 мес.<br>11 класс — 1 г. 10 мес.</td>
+                  <td data-label="Форма">Очная</td>
+                  <td data-label="Финансирование">Бюджет / Договор</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Код">06130100</td>
+                  <td data-label="Специальность">Программное обеспечение</td>
+                  <td data-label="Квалификация">4S06130103<br>Разработчик программного обеспечения</td>
+                  <td data-label="Срок обучения">9 класс — 3 г. 10 мес.<br>11 класс — 2 г. 10 мес.</td>
+                  <td data-label="Форма">Очная</td>
+                  <td data-label="Финансирование">Бюджет / Договор</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Код">06130100</td>
+                  <td data-label="Специальность">Программное обеспечение</td>
+                  <td data-label="Квалификация">4S06130104<br>Техник по сопровождению и тестированию ПО</td>
+                  <td data-label="Срок обучения">9 класс — 3 г. 10 мес.</td>
+                  <td data-label="Форма">Очная</td>
+                  <td data-label="Финансирование">Бюджет / Договор</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <img
+            class="abit-anime abit-anime--left"
+            src="./img/ChatGPT Image 24 февр. 2026 г., .png"
+            alt="аниме-девочка"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== SPEC FAQ ====== -->
+    <section class="specfaq" id="specfaq" aria-label="Описание специальностей">
+      <div class="container">
+
+        <div class="section-head section-head--left">
+          <div>
+            <h2 class="specfaq__title">Описание специальностей ~сенпай~</h2>
+            <p class="section-sub">
+              Нажми на специальность — и откроется описание. Всё по делу, но мило ✨
+            </p>
+          </div>
+
+          <!-- 2-я аниме: слева/рядом с заголовком -->
+          <img class="abit-anime abit-anime--head-left"
+               src="./img/ChatGPT_Image_25_февр._2026_г.__17_27_06-removebg-preview.png" alt="">
+        </div>
+
+        <div class="specfaq__list">
+
+          <!-- 1 -->
+          <article class="specfaq__item">
+            <button class="specfaq__question" type="button" aria-expanded="false">
+              <span class="specfaq__qtext">СПЕЦИАЛЬНОСТЬ «УЧЁТ И АУДИТ»</span>
+              <span class="specfaq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="specfaq__answer" role="region">
+              <div class="specfaq__answer-inner">
+                <p>
+                  Бухгалтерский учёт сегодня занимает одно из главных мест в системе управления. Он
+                  отражает реальные процессы
+                  производства, обращения, распределения и потребления, характеризует финансовое
+                  состояние предприятия и служит
+                  основой для принятия управленческих решений.
+                </p>
+                <p>
+                  В программу обучения будущих бухгалтеров входят такие дисциплины, как финансовый
+                  учет, деньги, финансы и кредит,
+                  налоги и налогообложение, аудит, анализ финансовой отчетности и экономика
+                  организации.
+                </p>
+                <p>
+                  После окончания обучения по специальности «Учёт и аудит» можно работать в
+                  государственных и коммерческих предприятиях
+                  и организациях, банках, биржах, финансовых и страховых компаниях, кредитных
+                  организациях и занимать должности
+                  главного бухгалтера, финансового директора, экономиста-бухгалтера, бухгалтера или
+                  кассира.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="specfaq__item">
+            <button class="specfaq__question" type="button" aria-expanded="false">
+              <span class="specfaq__qtext">СПЕЦИАЛЬНОСТЬ «Правоведение»</span>
+              <span class="specfaq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="specfaq__answer" role="region">
+              <div class="specfaq__answer-inner">
+                <p>
+                  Юрист — это человек, получивший юридическое образование и оказывающий помощь
+                  организациям и гражданам
+                  в составлении документов и выборе линии поведения в различных ситуациях.
+                </p>
+                <p>
+                  Основное время работы у юристов занимает составление документов, изучение
+                  нормативно-правовых актов и литературы,
+                  связанной с действующим законодательством.
+                </p>
+                <p>
+                  Профессия подходит морально устойчивым людям с аналитическим складом ума. Важны
+                  честность и неподкупность.
+                </p>
+                <p>
+                  Зарплата зависит от сферы, знаний, языков и опыта. В среднем варьируется от 80 000
+                  до 320 000 тенге.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="specfaq__item">
+            <button class="specfaq__question" type="button" aria-expanded="false">
+              <span class="specfaq__qtext">СПЕЦИАЛЬНОСТЬ «ОЦЕНКА»</span>
+              <span class="specfaq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="specfaq__answer" role="region">
+              <div class="specfaq__answer-inner">
+                <p>
+                  В программу обучения входят: бухгалтерский учет, макро- и микроэкономика, менеджмент
+                  и маркетинг, оценка земли,
+                  бизнеса, движимого и недвижимого имущества, экспертиза имущественных прав и др.
+                </p>
+                <p>
+                  Выпускник может работать экспертом-оценщиком, консультантом по оценке имущества,
+                  земли, машин, оборудования,
+                  транспортных средств, нематериальных активов, интеллектуальной собственности,
+                  бизнеса, а также занимать руководящие
+                  и экспертные должности.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="specfaq__item">
+            <button class="specfaq__question" type="button" aria-expanded="false">
+              <span class="specfaq__qtext">СПЕЦИАЛЬНОСТЬ «Программное обеспечение»</span>
+              <span class="specfaq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="specfaq__answer" role="region">
+              <div class="specfaq__answer-inner">
+                <p>
+                  Разработчик программного обеспечения (software developer) — специалист,
+                  задействованный в разработке ПО не только
+                  с точки зрения дизайна и кодинга, но и в аспектах качества, стоимости, надёжности и
+                  сопровождения продукта.
+                </p>
+                <p>
+                  Разработка ПО как инженерная дисциплина — часть программной инженерии. Многие
+                  программы содержат миллионы строк кода
+                  и должны корректно работать в меняющихся условиях.
+                </p>
+
+                <h4 class="specfaq__sub">Техник по сопровождению и тестированию ПО</h4>
+                <ul class="specfaq__ul">
+                  <li>Изучает продукт, цель и алгоритм работы</li>
+                  <li>Выбирает метод тестирования</li>
+                  <li>Разрабатывает тест-кейсы</li>
+                  <li>Пишет автоматические тесты (если нужно)</li>
+                  <li>Проводит проверку, находит ошибки и оформляет отчёты</li>
+                  <li>Готовит отчётность и техническую документацию</li>
+                  <li>Взаимодействует с разработчиками и другими отделами</li>
+                  <li>Консультирует по устранению ошибок</li>
+                </ul>
+
+                <p>
+                  Для работы важны: понимание процессов тестирования, принципы работы ОС, умение
+                  писать планы тестирования и тестовые сценарии.
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TUITION ====== -->
+    <section class="tuition">
+      <div class="tuition__inner">
+        <h2 class="tuition__title">Оплата за обучение ~ня~</h2>
+        <div class="tuition__price">380 000 ₸</div>
+      </div>
+    </section>
+
+    <!-- ====== APPLICATIONS ====== -->
+    <section class="applications">
+      <div class="applications__container">
+
+        <h2 class="applications__title">Виды заявок и способы предоставления ~чан~</h2>
+
+        <div class="applications__grid">
+
+          <a href="https://egov.kz/cms/ru/services/professional_education/pr_5" class="applications__item">
+            <h3 class="applications__item-title">
+              Прием документов на образовательный грант (бесплатное обучение)
+            </h3>
+            <p class="applications__item-sub">Через портал электронного правительства</p>
+            <span class="applications__link">Перейти →</span>
+          </a>
+
+          <a href="https://egov.kz/cms/ru/services/professional_education/perevod_1" class="applications__item">
+            <h3 class="applications__item-title">Перевод с другого колледжа</h3>
+            <p class="applications__item-sub">через портал "Электронного правительства"</p>
+            <span class="applications__link">Перейти →</span>
+          </a>
+
+          <a href="https://egov.kz/cms/ru/services/professional_education/pass-mon212-214" class="applications__item">
+            <h3 class="applications__item-title">Выдача дубликатов документов об образовании</h3>
+            <p class="applications__item-sub">Через портал электронного правительства</p>
+            <span class="applications__link">Перейти →</span>
+          </a>
+
+        </div>
+
+        <div class="applications__video">
+          <iframe
+            src="https://www.youtube.com/embed/TDOdfw5DBWE?si=vnrpOPbummzHVZH2"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== VFAQ ====== -->
+    <section class="vfaq" id="virtual" aria-label="Виртуальная приемная комиссия">
+      <div class="container">
+
+        <div class="section-head section-head--right">
+          <div>
+            <h2 class="vfaq__title">Виртуальная приемная комиссия ~сенпай~</h2>
+            <p class="section-sub">
+              Быстрые ответы на важные вопросы: документы, сроки и гранты ✨
+            </p>
+          </div>
+
+          <!-- 3-я аниме: справа/рядом с заголовком -->
+          <img
+            class="abit-anime abit-anime--head-right"
+            src="./img/ChatGPT_Image_25_февр._2026_г.__17_28_41-removebg-preview.png"
+            alt=""
+          />
+        </div>
+
+        <div class="vfaq__list">
+
+          <article class="vfaq__item">
+            <button class="vfaq__question" type="button" aria-expanded="false">
+              <span class="vfaq__qtext">Необходимые документы</span>
+              <span class="vfaq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="vfaq__answer" role="region">
+              <div class="vfaq__answer-inner">
+                <ol class="vfaq__ol">
+                  <li>Документ об образовании (подлинник)</li>
+                  <li>Медицинская справка форма 075-У</li>
+                  <li>Фотографии 4 шт. (размер 3×4)</li>
+                  <li>Копия удостоверения личности (свидетельства о рождении)</li>
+                  <li>Подтверждающий документ льготной категори (при наличии)</li>
+                  <li>ЭЦП одного из родителей (законного представителя)</li>
+                  <li>Скоросшиватель, файл, конверт</li>
+                </ol>
+              </div>
+            </div>
+          </article>
+
+          <article class="vfaq__item">
+            <button class="vfaq__question" type="button" aria-expanded="false">
+              <span class="vfaq__qtext">Срок подачи документов</span>
+              <span class="vfaq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="vfaq__answer" role="region">
+              <div class="vfaq__answer-inner">
+                <div class="vfaq__block">
+                  <p class="vfaq__label">На платное отделение</p>
+                  <p class="vfaq__text">с 25 июня по 25 августа</p>
+                </div>
+
+                <div class="vfaq__block">
+                  <p class="vfaq__label">На образовательный грант</p>
+
+                  <div class="vfaq__rows">
+                    <div class="vfaq__row">
+                      <span class="vfaq__muted">после 9 класса</span>
+                      <span class="vfaq__text">с 25 июня по 18 августа</span>
+                    </div>
+                    <div class="vfaq__row">
+                      <span class="vfaq__muted">после 11 класса</span>
+                      <span class="vfaq__text">с 25 июня по 20 августа</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <article class="vfaq__item">
+            <button class="vfaq__question" type="button" aria-expanded="false">
+              <span class="vfaq__qtext">Специальности с грантом</span>
+              <span class="vfaq__icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="vfaq__answer" role="region">
+              <div class="vfaq__answer-inner">
+                <ul class="vfaq__ul">
+                  <li><strong>04110100</strong> Учет и аудит — <strong>4S04110102</strong> Бухгалтер: 9 и 11 класс</li>
+                  <li><strong>04120200</strong> Оценка — <strong>4S04120202</strong> Техник-оценщик: 9 класс</li>
+                  <li><strong>06130100</strong> Программное обеспечение — <strong>4S06130103</strong> Разработчик ПО: 9 и 11 класс</li>
+                  <li><strong>06130100</strong> Программное обеспечение — <strong>4S06130104</strong> Техник по сопровождению и тестированию ПО: 9 класс</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h3 class="footer__title">Адрес</h3>
+        <p class="footer__text">
+          Республика Казахстан, г. Актобе,<br>
+          район Астана, ул. Маресьева 105
+        </p>
+
+        <h3 class="footer__title">График</h3>
+        <p class="footer__text">ПН-ПТ с 9:00 до 18:00</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <a href="tel:+77003543772" class="footer__link">+7 (700) 354-37-72</a>
+        <a href="mailto:info@ekeb.edu.kz" class="footer__link">info@ekeb.edu.kz</a>
+        <a href="mailto:ekeb@edu.kz" class="footer__link">ekeb@edu.kz</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Полезные ссылки</h3>
+        <a href="#" class="footer__link">Электронное правительство Республики Казахстан</a>
+        <a href="#" class="footer__link">Юридические услуги "Әділет"</a>
+        <a href="#" class="footer__link">НАО "Talap"</a>
+        <a href="#" class="footer__link">НОБД</a>
+        <a href="#" class="footer__link">АИС "Автоматизация государственных услуг"</a>
+        <a href="#" class="footer__link">Реестр образовательных программ</a>
+        <a href="#" class="footer__link">Национальная служба реагирования на компьютерные инциденты</a>
+        <a href="#" class="footer__link">Министерство просвещения Республики Казахстан</a>
+        <a href="#" class="footer__link">Департамент по обеспечению качества в сфере образования Актюбинской области</a>
+        <a href="#" class="footer__link">Национальная платформа непрерывного профессионального развития педагога</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">© Все права защищены</div>
+  </footer>
+
+  <script src="./burger.js"></script>
+</body>
+</html>
